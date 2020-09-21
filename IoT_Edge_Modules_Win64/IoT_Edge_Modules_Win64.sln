@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{34036844-64E7-43A5-9151-4AD90E180989}") = "IoT_Edge_Modules_Win64", "AzureIotEdge_Cam_Win64\IoT_Edge_Modules_Win64.iotedgeproj", "{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE} = {DDD57B71-9CAB-46FB-9382-330BC04BA6BE}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "edgemodule_rule_engine", "edgemodule_rule_engine\edgemodule_rule_engine.csproj", "{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "edgemodule_simulated_ir_cam", "edgemodule_simulated_ir_cam\edgemodule_simulated_ir_cam.csproj", "{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CheckInBuild|Any CPU = CheckInBuild|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}.CheckInBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}.CheckInBuild|Any CPU.Build.0 = Debug|Any CPU
+		{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B18860B-4DE9-4B5F-BDAD-4D7FFDB96E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}.CheckInBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}.CheckInBuild|Any CPU.Build.0 = Debug|Any CPU
+		{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD78097-DF3C-4887-A395-FFCD6BF7EC21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}.CheckInBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}.CheckInBuild|Any CPU.Build.0 = Debug|Any CPU
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD57B71-9CAB-46FB-9382-330BC04BA6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E057C359-D93D-4CBE-BFAE-2431D6D3CB7B}
+	EndGlobalSection
+EndGlobal

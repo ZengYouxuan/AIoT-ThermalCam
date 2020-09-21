@@ -1,0 +1,176 @@
+{
+  "$schema-template": "2.0.0",
+  "modulesContent": {
+    "$edgeAgent": {
+      "properties.desired": {
+        "schemaVersion": "1.0",
+        "runtime": {
+          "type": "docker",
+          "settings": {
+            "minDockerVersion": "v1.25",
+            "loggingOptions": "",
+            "registryCredentials": {
+              "containerregistry": {
+                "username": "$CONTAINER_REGISTRY_USERNAME_containerregistry",
+                "password": "$CONTAINER_REGISTRY_PASSWORD_containerregistry",
+                "address": "containerregistry.azurecr.cn"
+              }
+            }
+          }
+        },
+        "systemModules": {
+          "edgeAgent": {
+            "type": "docker",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-agent:1.0",
+              "createOptions": {
+                "HostConfig": {
+                  "Binds": [
+                    "C:/Camera_Images:C:/BlobRoot"
+                  ]
+                }
+              }
+            },
+            "env": {
+              "storageFolder": {
+                "value": "C:/Camera_Images"
+              }
+            }
+          },
+          "edgeHub": {
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-hub:1.0",
+              "createOptions": {
+                "HostConfig": {
+                  "Binds": [
+                    "C:/Camera_Images:C:/BlobRoot"
+                  ],
+                  "PortBindings": {
+                    "5671/tcp": [
+                      {
+                        "HostPort": "5671"
+                      }
+                    ],
+                    "8883/tcp": [
+                      {
+                        "HostPort": "8883"
+                      }
+                    ],
+                    "443/tcp": [
+                      {
+                        "HostPort": "443"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "env": {
+              "storageFolder": {
+                "value": "C:/Camera_Images"
+              }
+            }
+          }
+        },
+        "modules": {
+          "edgemodule_simulated_ir_cam": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "${MODULES.edgemodule_simulated_ir_cam}",
+              "createOptions": {}
+            }
+          },
+          "edgemodule_rule_engine": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "${MODULES.edgemodule_rule_engine}",
+              "createOptions": {}
+            }
+          },
+          "edgemodule_blobstorage": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "mcr.microsoft.com/azure-blob-storage:latest",
+              "createOptions": {
+                "Env": [
+                  "LOCAL_STORAGE_ACCOUNT_NAME=cameraimages",
+                  "LOCAL_STORAGE_ACCOUNT_KEY=eNC0cIjc5q2HMYqfLjceDw=="
+                ],
+                "HostConfig": {
+                  "Binds": [
+                    "C:/Camera_Images:C:/BlobRoot"
+                  ],
+                  "PortBindings": {
+                    "11002/tcp": [ { "HostPort": "11002" } ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "$edgeHub": {
+      "properties.desired": {
+        "schemaVersion": "1.0",
+        "routes": {
+          "edgemodule_simulated_ir_camToIoTHub": "FROM /messages/modules/edgemodule_simulated_ir_cam/outputs/* INTO $upstream",
+          "simCamToRoleEngine": "FROM /messages/modules/edgemodule_simulated_ir_cam/outputs/* INTO BrokeredEndpoint(\"/modules/edgemodule_rule_engine/inputs/input1\")",
+          "edgemodule_rule_engineToIoTHub": "FROM /messages/modules/edgemodule_rule_engine/outputs/* INTO $upstream",
+          "dahuaCamToRoleEngine": "FROM /messages/* WHERE NOT IS_DEFINED($connectionModuleId) INTO BrokeredEndpoint(\"/modules/edgemodule_rule_engine/inputs/input1\")",
+          "dahuaCamToIoTHub": "FROM /messages/* WHERE NOT IS_DEFINED($connectionModuleId) INTO $upstream",
+          "edgemodule_blobstorageToIoTHub": "FROM /messages/modules/edgemodule_blobstorage/outputs/* INTO $upstream"
+        },
+        "storeAndForwardConfiguration": {
+          "timeToLiveSecs": 7200
+        }
+      }
+    },
+    "edgemodule_rule_engine": {
+      "properties.desired": {
+        "TemperatureThreshold": 32.0
+      }
+    },
+    "edgemodule_simulated_ir_cam": {
+      "properties.desired": {
+        "Sensor_Temperature_Min": 30,
+        "Sensor_Temperature_Max": 45,
+        "MessageInterval": 49,
+        "ActivateCam": true,
+        "SensorLocation":"Sim-Shanghai-1"
+      }
+    },
+    "edgemodule_blobstorage": {
+      "properties.desired": {
+        "deviceAutoDeleteProperties": {
+          "deleteOn": true,
+          "deleteAfterMinutes": 60,
+          "retainWhileUploading": true
+        },
+        "deviceToCloudUploadProperties": {
+          "uploadOn": true,
+          "uploadOrder": "OldestFirst",
+          "cloudStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=image4workplacesafety;AccountKey=j7SiV6mlHxq2c0xtvlQps2w+sT4eFcDK6YuQUsIedO6iP73OIhjDZ9Dc8hO6D8WeHRJ2juX3hl+kf9EANzuuyQ==;EndpointSuffix=core.chinacloudapi.cn",
+          "storageContainersForUpload": {
+            "cameraimages": {
+              "target": "%d-%c"
+            }
+          },
+          "deleteAfterUpload": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\x64\Release\ThermalCam.csprojAssemblyReference.cache
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\x64\Release\ThermalCam.ThermalCam.resources
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\x64\Release\ThermalCam.csproj.GenerateResource.cache

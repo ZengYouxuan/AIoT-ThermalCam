@@ -1,0 +1,5 @@
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\bin\x64\Release\NetSDKCS.dll
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\bin\x64\Release\NetSDKCS.pdb
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Release\NetSDKCS.csprojAssemblyReference.cache
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Release\NetSDKCS.dll
+D:\project\IoT\微软测温\红外体温测量资料(PPT+代码)(1)\红外体温测量资料(PPT+代码)\AIoT-ThermalCam\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Release\NetSDKCS.pdb

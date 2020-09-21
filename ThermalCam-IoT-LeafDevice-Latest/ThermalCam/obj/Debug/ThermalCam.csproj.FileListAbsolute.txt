@@ -1,0 +1,4 @@
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\Debug\ThermalCam.csprojAssemblyReference.cache
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\Debug\ThermalCam.ThermalCam.resources
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\Debug\ThermalCam.csproj.GenerateResource.cache
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\ThermalCam\obj\Debug\ThermalCam.csproj.CoreCompileInputs.cache

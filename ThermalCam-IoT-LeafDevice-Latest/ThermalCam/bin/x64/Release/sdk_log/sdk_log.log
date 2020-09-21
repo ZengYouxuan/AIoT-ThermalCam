@@ -1,0 +1,29 @@
+Begin Time:2020-05-11T17:12:55.972
+[2020-05-11T17:12:55.972 info Netsdk:43484 9864:20020 AVNetSDKMgr.cpp:376]Load avnetsdk library dynamically
+[2020-05-11T17:12:56.000 info Netsdk:43484 9864:20020 AVNetSDKMgr.cpp:400]avnetsdk module handle: 0000020D53B10000
+
+[2020-05-11T17:12:56.000 info Netsdk:43484 9864:20020 AVNetSDKMgr.cpp:730]Load configsdk dynamically
+[2020-05-11T17:12:56.270 info Netsdk:43484 9864:20020 dhnetsdk.cpp:190]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000020D4F9B35EC, dwUser=0000000000000000].
+[2020-05-11T17:12:56.270 info Netsdk:43484 9864:20020 dhnetsdk.cpp:192]Leave CLIENT_SetAutoReconnect.
+[2020-05-11T17:12:56.271 info Netsdk:43484 9864:20020 dhnetsdk.cpp:397]Enter CLIENT_SetDVRMessCallBackEx1: [cbMessage=0000020D4F9B368C, dwUser=0000000000000000].
+[2020-05-11T17:12:56.272 info Netsdk:43484 9864:20020 dhnetsdk.cpp:399]Leave CLIENT_SetDVRMessCallBackEx1.
+Begin Time:2020-05-11T17:16:38.626
+[2020-05-11T17:16:38.626 info Netsdk:43484 17820:20460 AVNetSDKMgr.cpp:376]Load avnetsdk library dynamically
+[2020-05-11T17:16:38.656 info Netsdk:43484 17820:20460 AVNetSDKMgr.cpp:400]avnetsdk module handle: 000001A24A310000
+
+[2020-05-11T17:16:38.656 info Netsdk:43484 17820:20460 AVNetSDKMgr.cpp:730]Load configsdk dynamically
+[2020-05-11T17:16:38.933 info Netsdk:43484 17820:20460 dhnetsdk.cpp:190]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=000001A2460438BC, dwUser=0000000000000000].
+[2020-05-11T17:16:38.933 info Netsdk:43484 17820:20460 dhnetsdk.cpp:192]Leave CLIENT_SetAutoReconnect.
+[2020-05-11T17:16:38.934 info Netsdk:43484 17820:20460 dhnetsdk.cpp:397]Enter CLIENT_SetDVRMessCallBackEx1: [cbMessage=000001A24604363C, dwUser=0000000000000000].
+[2020-05-11T17:16:38.934 info Netsdk:43484 17820:20460 dhnetsdk.cpp:399]Leave CLIENT_SetDVRMessCallBackEx1.
+[2020-05-11T17:16:40.449 info Netsdk:43484 17820:20460 dhnetsdk.cpp:586]Enter CLIENT_LoginEx2. IP:10.12.70.208, port:37777, SpeCap:0, lpDeviceInfo:00000049BE3FDFB8.
+[2020-05-11T17:16:40.582 info Netsdk:43484 17820:20460 dhnetsdk.cpp:622]Leave CLIENT_LoginEx2. error:0, login ID:1233137056.
+[2020-05-11T17:16:40.591 info Netsdk:43484 17820:20460 dhnetsdk.cpp:9368]Enter CLIENT_RealLoadPictureEx. lLoginID:1233137056, nChannelID:0, dwAlarmType:1, bNeedPicFile:1, cbAnalyzerData:000001A2460439AC, dwUser:0000000000000000, Reserved:0000000000000000.
+[2020-05-11T17:16:40.593 info Netsdk:43484 17820:20460 Utils.cpp:4815]mutil NIC client
+[2020-05-11T17:16:40.610 info Netsdk:43484 17820:20460 DevConfigEx.cpp:10087]IN SetupSession PORT=0 and PORT: 37777
+[2020-05-11T17:16:40.642 info Netsdk:43484 17820:20460 dhnetsdk.cpp:9387]Leave CLIENT_RealLoadPictureEx. ret:1321044128.
+[2020-05-11T17:16:41.272 info Netsdk:43484 17820:20460 dhnetsdk.cpp:1105]Enter CLIENT_RealPlayEx. lLoginID:1233137056. nChannelID:0. rType:0
+[2020-05-11T17:16:41.449 info Netsdk:43484 17820:20460 DevConfigEx.cpp:10087]IN SetupSession PORT=0 and PORT: 37777
+[2020-05-11T17:16:41.532 info Netsdk:43484 17820:20460 dhnetsdk.cpp:1166]Leave CLIENT_RealPlayEx. ret:1321053888
+[2020-05-11T17:16:53.764 info Netsdk:43484 17820:20460 dhnetsdk.cpp:1770]Enter CLIENT_StopRealPlayEx. lRealHandle:1321053888.
+[2020-05-11T17:16:53.784 info Netsdk:43484 17820:20460 dhnetsdk.cpp:1784]Leave CLIENT_StopRealPlayEx. ret:1

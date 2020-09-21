@@ -1,0 +1,6 @@
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\bin\x64\Debug\NetSDKCS.dll
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\bin\x64\Debug\NetSDKCS.pdb
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Debug\NetSDKCS.csprojAssemblyReference.cache
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Debug\NetSDKCS.csproj.CoreCompileInputs.cache
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Debug\NetSDKCS.dll
+C:\Users\chha\Source\Repos\Workplace Safety\ThermalCam-IoT-LeafDevice-Latest\NetSDKCS\obj\x64\Debug\NetSDKCS.pdb
