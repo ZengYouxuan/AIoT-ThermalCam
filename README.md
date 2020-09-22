@@ -13,7 +13,7 @@
 
 # 架构设计
 
-![A](C:\Users\a\Desktop\new\MicrosoftAIoT-ThermalCam\A.jpg)
+![A](https://github.com/ZengYouxuan/AIoT-ThermalCam/blob/master/A.jpg)
 
 
 
