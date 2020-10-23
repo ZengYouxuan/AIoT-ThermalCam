@@ -13,7 +13,7 @@
 
 # 架构设计
 
-![A](https://github.com/ZengYouxuan/AIoT-ThermalCam/blob/master/A.jpg)
+![avatar](https://github.com/ZengYouxuan/AIoT-ThermalCam/blob/master/A.jpg)
 
 
 
