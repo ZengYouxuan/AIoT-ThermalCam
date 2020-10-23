@@ -13,7 +13,7 @@
 
 # 架构设计
 
-![text](https://zengyx.blob.core.chinacloudapi.cn/aiothermal/A.jpg)
+![avatar](https://zengyx.blob.core.chinacloudapi.cn/aiothermal/A.jpg)
 
 
 
